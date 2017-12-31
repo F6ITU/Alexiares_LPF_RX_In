@@ -27,10 +27,10 @@ Text Notes 7350 15750 0    60   ~ 0
 ALEXIARES HPF
 Text Notes 8150 15900 0    60   ~ 0
 May 22nd 2017
-Text Notes 5700 3900 0    60   ~ 12
+Text Notes 6050 3900 0    60   ~ 12
 RX1_Line\n\n
-Text Notes 7800 14600 0    197  ~ 39
-HPF \nOut
+Text Notes 1700 2450 0    197  ~ 39
+This project is deprecated\ndo no use on Angelia/Alexiares \n
 Wire Wire Line
 	5500 4000 5500 4050
 Wire Wire Line
@@ -510,7 +510,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 3800 4550 3800
 Wire Wire Line
-	2150 3700 2250 3700
+	1900 3700 2250 3700
 Wire Wire Line
 	2450 3700 2500 3700
 Connection ~ 2500 3800
@@ -576,7 +576,7 @@ F 3 "" H 2000 3800 50  0001 C CNN
 	1    2000 3800
 	-1   0    0    -1  
 $EndComp
-Text Notes 1800 4200 1    60   ~ 0
+Text Notes 1400 4050 1    60   ~ 0
 To Alexiares_HPF
 $Comp
 L Conn_01x03 J3
@@ -615,4 +615,87 @@ Text Notes 7600 4900 0    197  ~ 39
 Ajouter ferrites \nsur le relais
 Wire Wire Line
 	3350 3700 3350 3800
+Wire Wire Line
+	5300 3250 5300 3300
+$Comp
+L GND #PWR022
+U 1 1 5A34F329
+P 5300 3300
+F 0 "#PWR022" H 5300 3050 50  0001 C CNN
+F 1 "GND" H 5300 3150 50  0000 C CNN
+F 2 "" H 5300 3300 50  0000 C CNN
+F 3 "" H 5300 3300 50  0000 C CNN
+	1    5300 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_Coaxial J6
+U 1 1 5A34F32F
+P 5300 3050
+F 0 "J6" H 5310 3170 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 5415 3050 50  0000 C CNN
+F 2 "SMA_PINS:SMA_EDGE_NRW" H 5300 3050 50  0001 C CNN
+F 3 "" H 5300 3050 50  0001 C CNN
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4000 5750 4050
+$Comp
+L GND #PWR023
+U 1 1 5A34F40A
+P 5750 4050
+F 0 "#PWR023" H 5750 3800 50  0001 C CNN
+F 1 "GND" H 5750 3900 50  0000 C CNN
+F 2 "" H 5750 4050 50  0000 C CNN
+F 3 "" H 5750 4050 50  0000 C CNN
+	1    5750 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_Coaxial J7
+U 1 1 5A34F410
+P 5750 3800
+F 0 "J7" H 5760 3920 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 5865 3800 50  0000 C CNN
+F 2 "SMA_PINS:SMA_EDGE_NRW" H 5750 3800 50  0001 C CNN
+F 3 "" H 5750 3800 50  0001 C CNN
+	1    5750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4000 1750 4050
+$Comp
+L GND #PWR024
+U 1 1 5A34F599
+P 1750 4050
+F 0 "#PWR024" H 1750 3800 50  0001 C CNN
+F 1 "GND" H 1750 3900 50  0000 C CNN
+F 2 "" H 1750 4050 50  0000 C CNN
+F 3 "" H 1750 4050 50  0000 C CNN
+	1    1750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_Coaxial J4
+U 1 1 5A34F59F
+P 1750 3800
+F 0 "J4" H 1760 3920 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 1865 3800 50  0000 C CNN
+F 2 "SMA_PINS:SMA_EDGE_NRW" H 1750 3800 50  0001 C CNN
+F 3 "" H 1750 3800 50  0001 C CNN
+	1    1750 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3800 5600 3650
+Wire Wire Line
+	5600 3650 5300 3650
+Connection ~ 5300 3650
+Wire Wire Line
+	5150 3050 5150 2900
+Connection ~ 5150 2900
+Wire Wire Line
+	1900 3800 1900 3700
+Connection ~ 2150 3700
 $EndSCHEMATC

@@ -1,5 +1,8 @@
 # Alexiares_LPF_RX_In
 
+THIS PROJECT IS DEPRECATED. DO NOT USE IT WITH ANGELIA/ALEX ARCHITECTURE
+(could be used as a simple lpf with notch for any other short waves sdr project
+
 Alex RX 7th order lpf with 88-108 rejection notch
 
 This repository contains the High Pass Filter project of the OpenHPSDR Alexiares frontend
